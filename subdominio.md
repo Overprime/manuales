@@ -24,20 +24,13 @@ sudo chmod 755 -R   minraura.overprimegroup.com
 
 ### Crear Virtual Host(Dominio / Subdominio)
 
-Download a packaged archive of dompdf and extract it into the 
-directory where dompdf will reside
-
- * You can download stable copies of dompdf from
-   https://github.com/dompdf/dompdf/releases
- * Or download a nightly (the latest, unreleased code) from
-   http://eclecticgeek.com/dompdf
-
-Use the packaged release autoloader to load dompdf, libraries,
-and helper functions in your PHP:
-
-```php
-// include autoloader
-require_once 'dompdf/autoload.inc.php';
+Necesita acceder a la carpeta donde se almacenan  los virtual host
+```bash
+cd /etc/apache2/sites-available
+```
+Ahora debe crear el host virtual para su proyecto, copiando un archivo de nombre template que se encuentra en la carpeta
+```bash
+cp minraura.overprimegroup.com.conf template
 ```
 
 Note: packaged releases are named according using semantic
