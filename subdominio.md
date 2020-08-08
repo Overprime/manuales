@@ -6,21 +6,23 @@ Creación de dominios y Subdominios
 ### Crear Proyecto en carpeta publicadora
 
 Necesita acceder a la carpeta publicadora de Apache
-
 ```bash
 cd /var/www/
 ```
 
 Luego dentro de la carpeta publicadora crear una carpeta con el nombre del dominio o subdominio al cual se referenciará el proyecto
-
 ```bash
-// somewhere early in your project's loading, require the Composer autoloader
-// see: http://getcomposer.org/doc/00-intro.md
 mkdir minraura.overprimegroup.com
-
 ```
 
-### Download and install
+Luego necesita dar permisos de lectura y escritura a la carpeta creada
+```bash
+sudo chown -R www-data:www-data  minraura.overprimegroup.com
+sudo chmod 755 -R   minraura.overprimegroup.com
+```
+
+
+### Crear Virtual Host(Dominio / Subdominio)
 
 Download a packaged archive of dompdf and extract it into the 
 directory where dompdf will reside
