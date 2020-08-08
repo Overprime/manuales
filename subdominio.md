@@ -3,21 +3,20 @@ Creación de dominios y Subdominios
  
 ## Instalación
 
-### Crear Carpeta
+### Crear Proyecto en carpeta publicadora
 
-To install with [Composer](https://getcomposer.org/), simply require the
-latest version of this package.
+Necesita acceder a la carpeta publicadora de Apache
 
 ```bash
-composer require dompdf/dompdf
+cd /var/www/
 ```
 
-Make sure that the autoload file from Composer is loaded.
+Luego dentro de la carpeta publicadora crear una carpeta con el nombre del dominio o subdominio al cual se referenciará el proyecto
 
-```php
+```bash
 // somewhere early in your project's loading, require the Composer autoloader
 // see: http://getcomposer.org/doc/00-intro.md
-require 'vendor/autoload.php';
+mkdir minraura.overprimegroup.com
 
 ```
 
