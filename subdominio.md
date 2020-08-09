@@ -97,7 +97,7 @@ service apache2 restart
 
 Registrar Certficado Digital de Dominio y Subdominio
 ```bash
-sudo certbot --apache -d minraura.overprimegroup.net.conf
+sudo certbot --apache -d minraura.overprimegroup.net
 ```
 Luego  de ejecutar ese comando se generará el certificado y le pedirá que confirme el metodo de redirección:
 ```bash
