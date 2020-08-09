@@ -21,4 +21,7 @@ sudo chmod 755 -R   minraura.overprimegroup.net
 
 ### Clonar Base de datos
 Ingresar al administrador de base de datos  https://overprimegroup.net/phpmyadmin/ para clonar la base de datos
+One to two paragraph statement about your product and what it does.
+
+![](image.png)
 
