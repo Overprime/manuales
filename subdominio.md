@@ -93,33 +93,5 @@ Luego le pedira reiniciar el servicio de apache, utilice el siguiente comando:
 service apache2 restart
 ```
 
-
-### Install with git
-
-From the command line, switch to the directory where dompdf will
-reside and run the following commands:
-
-```sh
-git clone https://github.com/dompdf/dompdf.git
-cd dompdf/lib
-
-git clone https://github.com/PhenX/php-font-lib.git php-font-lib
-cd php-font-lib
-git checkout 0.5.1
-cd ..
-
-git clone https://github.com/PhenX/php-svg-lib.git php-svg-lib
-cd php-svg-lib
-git checkout v0.3.2
-cd ..
-
-git clone https://github.com/sabberworm/PHP-CSS-Parser.git php-css-parser
-cd php-css-parser
-git checkout 8.1.0
-```
-
-Require dompdf and it's dependencies in your PHP.
-For details see the [autoloader in the utils project](https://github.com/dompdf/utils/blob/master/autoload.inc.php).
-
-## Quick Start
+## Install with git
 
