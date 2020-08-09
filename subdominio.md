@@ -80,11 +80,20 @@ Ahora debe reemplazar con el siguiente contenido:
 ```
 Nota:
  * Los cambios son los atributos ServerName, ServerAlias.
- * Se referencia la carpeta del proyecton en la variable DocumentRoot.
+ * Se referencia la carpeta del proyecto en el atributo DocumentRoot
  * Para poder navegar en el archivo utilice las teclas de dirección.
  * Para guardar el archivo presione control + o (letra o).
  * Para salir del archivo presione control + x.
  
+Ahora debe registrar el Virtual Host Creado
+```bash
+sudo a2ensite  minraura.overprimegroup.net.conf
+```
+
+Luego le pedira reiniciar el servicio de apache, utilice el siguiente comando:
+```bash
+service apache2 restart
+```
 
 
 ### Install with git
