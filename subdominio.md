@@ -21,7 +21,6 @@ sudo chown -R www-data:www-data  minraura.overprimegroup.com
 sudo chmod 755 -R   minraura.overprimegroup.com
 ```
 
-
 ### Crear Virtual Host(Dominio / Subdominio)
 
 Necesita acceder a la carpeta donde se almacenan  los virtual host
@@ -32,11 +31,31 @@ Ahora debe crear el host virtual para su proyecto, copiando un archivo de nombre
 ```bash
 cp minraura.overprimegroup.com.conf template
 ```
+Luego debe ingresar al archivo creado
+```bash
+nano minraura.overprimegroup.com.conf
+```
+```bash
+//Contenido del Archivo
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
 
-Note: packaged releases are named according using semantic
-versioning (_dompdf_MAJOR-MINOR-PATCH.zip_). So the 1.0.0 
-release would be dompdf_1-0-0.zip. This is the only download
-that includes the autoloader for Dompdf and all its dependencies.
+        <Directory /var/www/html/>
+            Options Indexes FollowSymLinks
+            AllowOverride All
+            Require all granted
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        <IfModule mod_dir.c>
+            DirectoryIndex index.php index.pl index.cgi index.html index.xhtml index.htm
+        </IfModule>
+
+</VirtualHost>
+```
 
 ### Install with git
 
