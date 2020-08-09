@@ -1,7 +1,5 @@
 Creación de dominios y Subdominios
 ======
- 
-## Instalación
 
 ### Crear Proyecto en carpeta publicadora
 
