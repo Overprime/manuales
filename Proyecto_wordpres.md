@@ -50,8 +50,13 @@ Quedaría asi:
 define( 'DB_NAME', 'biblioteca_minraura' );
 ```
 
-
-
+## Actualizar Base de datos
+Actualizar URL del Proyecto: Se ingresar la url del proyecto nuevo
+```sql
+UPDATE `wp_options` SET `option_value` = 'https://minraura.overprimegroup.net' WHERE `wp_options`.`option_id` = 1;
+UPDATE `wp_options` SET `option_value` = 'https://minraura.overprimegroup.net' WHERE `wp_options`.`option_id` = 2;
+UPDATE `wp_options` SET `option_value` = 'https://minraura.overprimegroup.net/wp-content/uploads/2020/08/logo_overprime.jpg' WHERE `wp_options`.`option_id` = 218;
+```
 
 
 
