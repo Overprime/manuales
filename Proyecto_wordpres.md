@@ -22,7 +22,7 @@ sudo chmod 755 -R   minraura.overprimegroup.net
 ### Clonar Base de datos
 Ingresar al administrador de base de datos  https://overprimegroup.net/phpmyadmin/ para clonar la base de datos:
 
-* Seleccionar la base de datos **biblioteca_mincondestable** ir a la opcion operaciones y Copiar Base de Datos ingresando el nombre de la base de datos
+* Seleccionar la base de datos **biblioteca_mincondestable** ir a la opcion operaciones y Copiar Base de Datos ingresando el nombre de la base de datos en este ejemplo **biblioteca_minraura**
 
 ![](image.png)
 
