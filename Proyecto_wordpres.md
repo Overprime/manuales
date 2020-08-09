@@ -12,6 +12,8 @@ Clonar dentro del proyecto(el punto al final significa que se copiará en la car
 ```bash
 git clone https://github.com/Overprime/biblioteca_digital .
 ```
+![](image.png)
+
 
 Luego dar permisos de escritura y lectura
 ```bash
@@ -24,5 +26,5 @@ Ingresar al administrador de base de datos  https://overprimegroup.net/phpmyadmi
 
 * Seleccionar la base de datos **biblioteca_mincondestable** ir a la opcion operaciones y Copiar Base de Datos ingresando el nombre de la base de datos en este ejemplo **biblioteca_minraura**
 
-![](image.png)
+![](phpmyadmin.png)
 
