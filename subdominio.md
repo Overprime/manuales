@@ -93,5 +93,14 @@ Luego le pedira reiniciar el servicio de apache, utilice el siguiente comando:
 service apache2 restart
 ```
 
-## Install with git
+## Crear Certificado Digital
+
+Registrar Certficado Digital de Dominio y Subdominio
+```bash
+sudo certbot --apache -d minraura.overprimegroup.net.conf
+```
+Luego  de ejecutar ese comando se generará el certificado y le pedirá que confirme como desea que cargue el certificado:
+* 
+*
+
 
