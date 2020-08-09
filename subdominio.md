@@ -56,7 +56,7 @@ Contenido del Archivo
 
 </VirtualHost>
 ```
-Ahora debe reemplazar con el siguiente contenido: Se agrega las variables las variables ServerName, ServerAlias y se agrega la ruta en la variable DocumentRoot
+Ahora debe reemplazar con el siguiente contenido:
 ```bash
 <VirtualHost *:80>
         ServerName  minraura.overprimegroup.net
@@ -78,6 +78,14 @@ Ahora debe reemplazar con el siguiente contenido: Se agrega las variables las va
         </IfModule>
 </VirtualHost>
 ```
+Nota:
+ * Los cambios son los atributos ServerName, ServerAlias.
+ * Se referencia la carpeta del proyecton en la variable DocumentRoot.
+ * Para poder navegar en el archivo utilice las teclas de dirección.
+ * Para guardar el archivo presione control + o (letra o).
+ * Para salir del archivo presione control + x.
+ 
+
 
 ### Install with git
 
