@@ -27,7 +27,7 @@ cd /etc/apache2/sites-available
 ```
 Ahora debe crear el host virtual para su proyecto, copiando un archivo de nombre template que se encuentra en la carpeta
 ```bash
-cp minraura.overprimegroup.net.conf template
+cp template minraura.overprimegroup.net.conf 
 ```
 Luego debe ingresar al archivo creado
 ```bash
