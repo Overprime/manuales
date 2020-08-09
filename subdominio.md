@@ -12,13 +12,13 @@ cd /var/www/
 
 Luego dentro de la carpeta publicadora crear una carpeta con el nombre del dominio o subdominio al cual se referenciará el proyecto
 ```bash
-mkdir minraura.overprimegroup.com
+mkdir minraura.overprimegroup.net
 ```
 
 Luego necesita dar permisos de lectura y escritura a la carpeta creada
 ```bash
-sudo chown -R www-data:www-data  minraura.overprimegroup.com
-sudo chmod 755 -R   minraura.overprimegroup.com
+sudo chown -R www-data:www-data  minraura.overprimegroup.net
+sudo chmod 755 -R   minraura.overprimegroup.net
 ```
 
 ### Crear Virtual Host(Dominio / Subdominio)
@@ -29,14 +29,14 @@ cd /etc/apache2/sites-available
 ```
 Ahora debe crear el host virtual para su proyecto, copiando un archivo de nombre template que se encuentra en la carpeta
 ```bash
-cp minraura.overprimegroup.com.conf template
+cp minraura.overprimegroup.net.conf template
 ```
 Luego debe ingresar al archivo creado
 ```bash
-nano minraura.overprimegroup.com.conf
+nano minraura.overprimegroup.net.conf
 ```
+Contenido del Archivo
 ```bash
-//Contenido del Archivo
 <VirtualHost *:80>
         ServerAdmin webmaster@localhost
         DocumentRoot /var/www/html
@@ -54,6 +54,28 @@ nano minraura.overprimegroup.com.conf
             DirectoryIndex index.php index.pl index.cgi index.html index.xhtml index.htm
         </IfModule>
 
+</VirtualHost>
+```
+Ahora debe reemplazar con el siguiente contenido
+```bash
+<VirtualHost *:80>
+        ServerName  minraura.overprimegroup.net
+        ServerAlias www.minraura.overprimegroup.net
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/minraura.overprimegroup.net
+
+        <Directory /var/www/minraura.overprimegroup.net/>
+            Options Indexes FollowSymLinks
+            AllowOverride All
+            Require all granted
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        <IfModule mod_dir.c>
+            DirectoryIndex index.php index.pl index.cgi index.html index.xhtml index.htm
+        </IfModule>
 </VirtualHost>
 ```
 
