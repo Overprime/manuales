@@ -18,3 +18,7 @@ Luego dar permisos de escritura y lectura
 sudo chown -R www-data:www-data  minraura.overprimegroup.net
 sudo chmod 755 -R   minraura.overprimegroup.net
 ```
+
+### Clonar Base de datos
+Ingresar al administrador de base de datos  https://overprimegroup.net/phpmyadmin/ para clonar la base de datos
+
