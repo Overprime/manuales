@@ -56,7 +56,7 @@ Contenido del Archivo
 
 </VirtualHost>
 ```
-Ahora debe reemplazar con el siguiente contenido
+Ahora debe reemplazar con el siguiente contenido: Se agrega las variables las variables ServerName, ServerAlias y se agrega la ruta en la variable DocumentRoot
 ```bash
 <VirtualHost *:80>
         ServerName  minraura.overprimegroup.net
