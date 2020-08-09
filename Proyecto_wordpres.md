@@ -51,7 +51,7 @@ define( 'DB_NAME', 'biblioteca_minraura' );
 ```
 
 ## Actualizar Base de datos
-Actualizar URL del Proyecto: Se ingresar la url del proyecto nuevo
+Ejecutar los siguientes comandos sql para actualizar las url de acceso del proyecto
 ```sql
 UPDATE `wp_options` SET `option_value` = 'https://minraura.overprimegroup.net' WHERE `wp_options`.`option_id` = 1;
 UPDATE `wp_options` SET `option_value` = 'https://minraura.overprimegroup.net' WHERE `wp_options`.`option_id` = 2;
