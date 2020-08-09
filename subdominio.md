@@ -99,8 +99,16 @@ Registrar Certficado Digital de Dominio y Subdominio
 ```bash
 sudo certbot --apache -d minraura.overprimegroup.net.conf
 ```
-Luego  de ejecutar ese comando se generará el certificado y le pedirá que confirme como desea que cargue el certificado:
-* 
-*
-
+Luego  de ejecutar ese comando se generará el certificado y le pedirá que confirme el metodo de redirección:
+```bash
+Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+1: No redirect - Make no further changes to the webserver configuration.
+2: Redirect - Make all requests redirect to secure HTTPS access. Choose this for
+new sites, or if you're confident your site works on HTTPS. You can undo this
+change by editing your web server's configuration.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
+```
+Debe elegir la opción 2, para que se redireccione de manera automatica 
 
