@@ -37,7 +37,7 @@ cd /var/www/minraura.overprimegroup.net
 
 Edite el archivo de configuración
 ```bash
-nano nano wp-config.php
+nano  wp-config.php
 ```
 
 Dentro del archivo ubique esta línea y modifiquelo por la base de datos de su proyecto actual
@@ -47,7 +47,7 @@ define( 'DB_NAME', 'biblioteca_mincondestable' );
 
 Quedaría asi:
 ```php
-define( 'DB_NAME', 'biblioteca_mincondestable' );
+define( 'DB_NAME', 'biblioteca_minraura' );
 ```
 
 
